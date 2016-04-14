@@ -259,3 +259,11 @@ if ( file_exists( dirname( __FILE__ ) . '/config/environment/dev' ) ) {
 **Do Not** Import a local database to a production environment.
 
 - https://wppusher.com/
+
+## References
+
+- Screencasts
+  - WDI7
+    - https://vimeo.com/151079652
+    - https://vimeo.com/151079655
+    - https://vimeo.com/151079654
