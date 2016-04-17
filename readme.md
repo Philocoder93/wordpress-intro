@@ -211,9 +211,7 @@ Plugins are installed in `wp-content/plugins/`
 
 ### [Advanced Custom Fields](http://www.advancedcustomfields.com/)
 
-We do: Create a Banner Custom Field.
-
-You do: Create a tldr custom field.
+You do: Create a custom field.
 
 ### [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/)
 
@@ -221,9 +219,7 @@ Custom Post Type UI is often used in conjunction with Advanced Custom Fields.
 
 This is an example of a custom post type: http://www.eachpeachmarket.com/recipes/
 
-## You do: Plugin Exploration
-
-Count off 1-7
+## More Plugins
 
 1. https://wordpress.org/plugins/shortcodes-ultimate/
 2. https://wordpress.org/plugins/w3-total-cache/
@@ -233,32 +229,8 @@ Count off 1-7
 6. https://wordpress.org/plugins/nextgen-gallery/
 7. https://wordpress.org/plugins/buddypress/
 
-### Deployment
+## Deployment
 
-What workflow enables us to make and test changes locally and then upload
-these changes to a production environment?
-
-```php
-if ( file_exists( dirname( __FILE__ ) . '/config/environment/dev' ) ) {
-  define('DB_NAME', 'development');
-  define('DB_USER', 'development');
-  define('DB_PASSWORD', '9JNdhxgd');
-  define('DB_HOST', '127.0.0.1');
-  define('WP_SITEURL','http://localhost:8888/');
-  define('WP_HOME','http://localhost:8888/');
-} else{
-  define('DB_NAME', 'production');
-  define('DB_USER', 'production');
-  define('DB_PASSWORD', '9JNdhxgd');
-  define('DB_HOST', 'localhost');
-  define('WP_SITEURL','http://production.example.com');
-  define('WP_HOME','http://production.example.com');
-}
-```
-
-**Do Not** Import a local database to a production environment.
-
-- https://wppusher.com/
 
 ## References
 
