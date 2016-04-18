@@ -211,9 +211,7 @@ Plugins are installed in `wp-content/plugins/`
 
 ### [Advanced Custom Fields](http://www.advancedcustomfields.com/)
 
-We do: Create a Banner Custom Field.
-
-You do: Create a tldr custom field.
+You do: Create a custom field.
 
 ### [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/)
 
@@ -221,9 +219,7 @@ Custom Post Type UI is often used in conjunction with Advanced Custom Fields.
 
 This is an example of a custom post type: http://www.eachpeachmarket.com/recipes/
 
-## You do: Plugin Exploration
-
-Count off 1-7
+## More Plugins
 
 1. https://wordpress.org/plugins/shortcodes-ultimate/
 2. https://wordpress.org/plugins/w3-total-cache/
@@ -233,32 +229,56 @@ Count off 1-7
 6. https://wordpress.org/plugins/nextgen-gallery/
 7. https://wordpress.org/plugins/buddypress/
 
-### Deployment
+## Deployment
 
-What workflow enables us to make and test changes locally and then upload
-these changes to a production environment?
+Lots of shared web hosts offer wordpress hosting for a small monthly fee.
 
-```php
-if ( file_exists( dirname( __FILE__ ) . '/config/environment/dev' ) ) {
-  define('DB_NAME', 'development');
-  define('DB_USER', 'development');
-  define('DB_PASSWORD', '9JNdhxgd');
-  define('DB_HOST', '127.0.0.1');
-  define('WP_SITEURL','http://localhost:8888/');
-  define('WP_HOME','http://localhost:8888/');
-} else{
-  define('DB_NAME', 'production');
-  define('DB_USER', 'production');
-  define('DB_PASSWORD', '9JNdhxgd');
-  define('DB_HOST', 'localhost');
-  define('WP_SITEURL','http://production.example.com');
-  define('WP_HOME','http://production.example.com');
-}
-```
+I recommend these hosts:
 
-**Do Not** Import a local database to a production environment.
+- https://asmallorange.com/
+- https://www.bluehost.com/
+- https://www.dreamhost.com/?gclid=CIb4neDwlswCFYEehgodc4gD-Q
 
-- https://wppusher.com/
+You might also want a domain name.
+
+I recommend these registrars:
+
+- https://www.namecheap.com/
+- https://iwantmyname.com
+
+It's not necessary to purchase the domain and the hosting from the same company.
+
+If you decide to purchase them separately you'll need to:
+
+### Set domain nameservers
+
+A name server translates domain names into IP addresses. A nameserver hosts
+your DNS configuration.
+
+### Update DNS configuration
+
+This is where you configure DNS records. Here's what mine looks like for https://jesse.sh/awl
+
+![](https://dl.dropboxusercontent.com/s/vrlzj9mzu1nt7iw/Screenshot%202016-04-17%2020.05.20.png?dl=0)
+
+The most commonly used records are A and CNAME (alias).
+
+An A record translates a domain or subdomain into an IP address. Possible values
+include:
+
+- `@`
+  - the domain itself, like jesse.sh
+- `*`
+  - any subdomain, like anysubdomain.jesse.sh or dabble.jesse.sh
+- `www`
+  - the subdomain www.jesse.sh (should probably fix this)
+
+The second value is always an IP.
+
+A CNAME translates a domain or subdomain into another domain name. Possible values
+include the same as the above.
+
+The second value is always another domain.
 
 ## References
 
