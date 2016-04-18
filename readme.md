@@ -1,5 +1,14 @@
 # Wordpress Theme Development
 
+## Learning Objectives
+
+- Compare/contrast wordpress.com and wordpress.org
+- Install wordpress locally
+- Create a custom wordpress theme
+- Explain what the loop is and how it works
+- Use wordpress plugins to customize new post view
+- Create a custom post type
+
 ## Getting started with WordPress
 
 WordPress is a content management system. You
