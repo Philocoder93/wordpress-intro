@@ -62,6 +62,7 @@ less flexible than the WordPress you download and install yourself.
     $ cd wp-contents/themes/milky-way
     $ touch index.php style.css functions.php
 
+#### Bonus
 Add a `screenshot.jpg` file with the image of your choosing.
 
 ### Header and Footer
@@ -153,6 +154,37 @@ https://codex.wordpress.org/The_Loop
 
 Settings > Permalinks
 
+## Plugins
+
+>Plugins are ways to extend and add to the functionality that already exists in WordPress.
+
+https://codex.wordpress.org/Plugins
+
+Plugins are installed in `wp-content/plugins/`
+
+### [Advanced Custom Fields](http://www.advancedcustomfields.com/)
+
+We do: Install the plugin and create a custom field for price
+
+### [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/)
+
+Custom Post Type UI is often used in conjunction with Advanced Custom Fields.
+
+This is an example of a custom post type: http://www.eachpeachmarket.com/recipes/
+
+You do: Install the custom post type UI plugin, and create a "Product" post type.
+Add at least two custom fields.
+
+## More Plugins
+
+1. https://wordpress.org/plugins/shortcodes-ultimate/
+2. https://wordpress.org/plugins/w3-total-cache/
+3. https://wordpress.org/plugins/contact-form-7/
+4. https://wordpress.org/plugins/wordpress-seo/
+5. https://wordpress.org/plugins/portfolio-slideshow/
+6. https://wordpress.org/plugins/nextgen-gallery/
+7. https://wordpress.org/plugins/buddypress/
+
 ## Custom Posts and Pages
 
 https://developer.wordpress.org/themes/template-files-section/page-template-files/page-templates/
@@ -210,34 +242,6 @@ To create a global template, write an opening PHP comment at the top of the file
 ?>
 // the loop...
 ```
-
-## Plugins
-
->Plugins are ways to extend and add to the functionality that already exists in WordPress.
-
-https://codex.wordpress.org/Plugins
-
-Plugins are installed in `wp-content/plugins/`
-
-### [Advanced Custom Fields](http://www.advancedcustomfields.com/)
-
-You do: Create a custom field.
-
-### [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/)
-
-Custom Post Type UI is often used in conjunction with Advanced Custom Fields.
-
-This is an example of a custom post type: http://www.eachpeachmarket.com/recipes/
-
-## More Plugins
-
-1. https://wordpress.org/plugins/shortcodes-ultimate/
-2. https://wordpress.org/plugins/w3-total-cache/
-3. https://wordpress.org/plugins/contact-form-7/
-4. https://wordpress.org/plugins/wordpress-seo/
-5. https://wordpress.org/plugins/portfolio-slideshow/
-6. https://wordpress.org/plugins/nextgen-gallery/
-7. https://wordpress.org/plugins/buddypress/
 
 ## Deployment
 
